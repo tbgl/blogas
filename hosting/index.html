@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://unpkg.com/srcsjs@0.0.5/s.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.15.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.15.0/firebase-database-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.15.0/firebase-auth-compat.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Geras Blogas</title>
+    <script>
+
+      // const firebaseConfig = {
+      //   apiKey: "AIzaSyAf-x3W46Sv-jyuEhuJbf2yC_mmsiKfeEw",
+      //   authDomain: "gerasblog.firebaseapp.com",
+      //   databaseURL: "https://gerasblog-default-rtdb.europe-west1.firebasedatabase.app",
+      //   projectId: "gerasblog",
+      //   storageBucket: "gerasblog.appspot.com",
+      //   messagingSenderId: "1007257213749",
+      //   appId: "1:1007257213749:web:fb08230078ea54e7cf8a7c"
+      // };
+
+      // firebase.initializeApp(firebaseConfig)
+
+      // const db = firebase.database()
+
+      // const auth = firebase.auth()
+
+      // auth.onAuthStateChanged(user => {
+      //     if(user) {
+            
+      //     }
+      //     else {
+
+      //     }
+      // })
+
+      // const w = db.ref('w')
+      // const irasai = db.ref('irasai')
+
+      // irasai.on('value', pridetiIrasus)
+
+      // function pridetiIrasus(irasai) {
+
+      //   const irasuElementas = e('irasai')
+
+      //   for(iraso_objektas of irasai.val()) {
+      //     add(irasuElementas, sukurtiIrasoElementa(iraso_objektas))
+      //   }
+      // }
+
+      // function sukurtiIrasoElementa(iraso_objektas) {
+      //   // iraso_objektas = { pavadinimas: '', data: '', nuoroda: '' }
+
+      //   return ce(
+      //     { 
+      //       t: iraso_objektas.pavadinimas}),
+      //       e: 'div', 
+      //       cl: 'irasas', 
+      //       a: { 
+      //         onlick: 'rodytiIrasa(this)', 
+      //         data: iraso_objektas.data, 
+      //         nuoroda: iraso_objektas.nuoroda
+      //       }
+      // }
+
+      // function rodytiIrasa(elementas) {
+      //   const iraso_turinio_nuoroda = db.ref('turiniai/'+ga(elementas, 'nuoroda'))
+      //   iraso_turinio_nuoroda.on('value', )
+      // }
+
+    </script>
+    <style>
+      * { font-family: monospace; font-size: 19px;}
+      #logo { text-align: center; height: 10vh; font-size: 3em; text-transform: uppercase; }
+      #irasai { padding: 5vh 5vw; }
+      .pavadinimas { font-size: 2em; font-weight: bold; }
+      .turinys { padding: 1em 0; }
+      .t1 { font-size: 1.5em; font-style: italic; }
+    </style>
+  </head>
+  <body>
+
+    <div id="logo">
+      Geras Blogas
+    </div>
+
+    <div id="irasai">
+      <div class="irasas" onclick="rodytiIrasa(this)" nuoroda="">
+        <div class="pavadinimas">
+          Teorija
+        </div>
+        <div class="data"> 
+          2023-03-03
+        </div>
+        <div class="turinys">
+          <div class="t1">
+            Ką reiškia žodis teorija?
+          </div>
+          <p>
+            Mokslo srityje šis žodis naudojamas apibudinti tai kas nėra įrodyta. Yra daug skirtingų teorijų tokių kaip "didžiojo sprogimo" bei "evoliucijos" kurios yra  priimamos kaip tiesa nes joms patvirtinti yra surinkta daug įrodymų.
+          </p>
+          <p>
+            Tačiau jei žodis "teorija" naudojamas kartu su kitu žodžiu būtų verta paklausti ar tas kitas žodis negalėtų būti naudojamas vienas. 
+          </p>
+          <p>
+            Tačiau kartais yra dalykų dėl kurių neįmanoma būti tikram. Tokiais atvejais yra daromos prielaidos iš kurių tada galima sudėlioti tam tikrą teoriją. 
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>
